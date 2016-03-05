@@ -1,0 +1,11 @@
+{
+	"MySQL": {
+		"db_name": "www.exsample.com",
+		"pass": "rootパスワード",
+		"user": "ユーザー名",
+		"user_pass": "ユーザーパスワード"
+	},
+	"Directory": {
+		"www": "www.exsample.com",
+	}
+}
