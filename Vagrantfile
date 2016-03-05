@@ -69,10 +69,10 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
 
-    config.vm.hostname = "www.exsample.com"
+    config.vm.hostname = "#{node[:Directory][:www]}"
     config.vm.box = "CentOS6.5-x64"
     config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box"
-    config.vm.network :private_network, ip: "192.168.10.10"
+    config.vm.network :private_network, ip: "#{node[:Directory][:www]}"
     # config.vm.synced_folder "指定フォルダ", "VMパス", create: true, owner: "vagrant", group: "vagrant"
     config.vm.provider "virtualbox" do |vb|
         vb.customize ["modifyvm", :id, "--memory", "2048"]

@@ -7,5 +7,6 @@
 	},
 	"Directory": {
 		"www": "www.exsample.com",
+		"IP": "192.168.10.10",
 	}
 }
